@@ -1,0 +1,143 @@
+<!doctype html><html lang="zh-Hans"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>隐私政策 · Zetta</title><style>body{font-family:-apple-system,BlinkMacSystemFont,"Helvetica Neue",Arial,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;max-width:760px;margin:0 auto;padding:32px 20px 64px;line-height:1.7;color:#1c1c1e;background:#fff}h1{font-size:28px;margin:0 0 4px}h2{font-size:17px;margin:28px 0 6px}p{margin:6px 0}.meta{color:#6e6e73;font-size:14px;margin-bottom:24px}.lang{display:flex;gap:16px;margin-bottom:24px;font-size:14px}.lang a{color:#2563eb;text-decoration:none}hr{border:0;border-top:1px solid #e5e5ea;margin:40px 0}footer{margin-top:48px;color:#6e6e73;font-size:13px}nav a{color:#2563eb;text-decoration:none;margin-right:16px}</style></head><body><nav><a href="./">Zetta</a><a href="privacy.html">隐私政策 / Privacy</a><a href="terms.html">服务条款 / Terms</a><a href="support.html">支持 / Support</a></nav><h1>隐私政策</h1><p class="meta">版本 1.13 · 最后更新 2026-09-03</p><p>本隐私政策（以下简称「本政策」）适用于本应用及其随附的网络扩展组件。本政策说明本应用在何种情形下处理何种信息、处理的目的与方式、信息的存储位置与留存期限，以及您就此享有的权利。请您在使用本应用前完整阅读本政策。</p>
+<h2>1. 定义</h2>
+<p>1.1 「本应用」指本网络代理客户端软件，包括其主程序与随附的网络扩展（NetworkExtension）组件。</p>
+<p>1.2 「开发者」指本应用的开发与发布主体，即本政策项下信息处理活动的责任主体。开发者不运营任何服务端。</p>
+<p>1.3 「第三方服务提供者」指由您自行选择并在本应用中配置的网络服务提供者。第三方服务提供者与开发者之间不存在隶属、代理、合作或其他控制关系。</p>
+<p>1.4 「个人信息」指以电子或者其他方式记录的、能够单独或者与其他信息结合识别特定自然人身份或者反映特定自然人活动情况的各种信息。</p>
+<h2>2. 信息的收集</h2>
+<p>2.1 本应用不收集的信息</p>
+<p>本应用不收集下列信息：</p>
+<p>（1）姓名、出生日期、身份证件号码、电话号码等可直接或间接识别您身份的个人信息；</p>
+<p>（2）用于广告投放或者跨应用跟踪的设备标识符；</p>
+<p>（3）您经由本应用访问的网址、域名、目标服务器地址、连接发起时间、连接持续时长等访问记录与连接元数据；</p>
+<p>（4）经由隧道传输的任何流量内容。</p>
+<p>本应用不设置自有账户体系，不要求您向开发者注册或登录，不与任何由开发者运营的服务器通信，亦未集成任何第三方统计分析、广告或崩溃采集软件开发工具包（SDK）。</p>
+<p>2.2 您在设备上提供或生成的信息</p>
+<p>您在使用本应用的过程中可能输入、导入或生成下列信息：订阅地址、线路配置信息，以及订阅地址中通常内嵌的访问凭据（如令牌、UUID 等）。</p>
+<p>上述信息由本应用在您的设备本地处理与存储，存储方式见第 5 条，不向开发者传输。</p>
+<p>本应用于「设置 → 订阅」页内提供「复制订阅地址」操作。该操作由您主动发起，本应用不会自动执行；经由该操作写入系统剪贴板的内容已被限定为仅在本机可用（不经由「接力」等功能同步至您的其他设备），并设定十分钟后自动失效。请注意，订阅地址通常内嵌访问凭据，效力等同于密码。</p>
+<p>2.3 本地诊断日志</p>
+<p>为便于您自行排查连接故障，本应用会在您的设备本地写入运行日志。除隧道建立情况与内核错误信息外，该日志还包含由内核记录的逐条连接记录，其内容包括目标主机名或者 IP、端口、所使用的出站线路以及失败原因。该日志：</p>
+<p>（1）仅存储于您设备的本地容器内，不会由本应用自动上传至开发者或者任何第三方；</p>
+<p>（2）在本应用内查看或者导出该日志时，逐条连接记录中的目标主机名与 IP 将被替换为占位符，端口、出站线路与失败原因予以保留。即：您主动分享出去的内容不含前述目标地址，而设备本地留存的原始文件仍然包含；</p>
+<p>（3）按写入方分别清除：隧道进程写入的日志（含内核轮转产生的副本）在每次发起连接时删除；本应用主进程写入的内核日志在每次重新开启日志（应用启动、以及每次连接前测速）时删除；连接前测速的记录每轮覆盖写入。即设备上始终仅保留最近一次的日志；</p>
+<p>（4）随本应用被卸载而一并删除。</p>
+<p>本应用于「活动」页内提供「诊断日志」功能，供您查阅上述日志。您可在该页面主动执行下列操作，该等操作均由您发起，本应用不会自动执行：</p>
+<p>（1）复制：日志文本将写入您设备的系统剪贴板。本应用已将该项内容限定为仅在本机可用（不经由「接力」等功能同步至您的其他设备），并设定十分钟后自动失效。</p>
+<p>（2）导出：本应用在您设备的临时目录内生成一份日志文件，以供您通过系统分享功能发送。该文件在分享界面关闭后即由本应用删除。</p>
+<p>若您为获得技术支持而主动将该日志发送给开发者，该行为属于您的主动提供，其内容与范围由您自行决定。日志内容可能包含您所配置的线路地址与服务器域名，建议您在发送前自行查阅。</p>
+<h2>3. 信息的使用</h2>
+<p>3.1 第 2.2 条所述信息，仅用于在您的设备本地建立与维持网络连接、解析与更新您所配置的订阅内容，以及在界面中呈现线路与账户信息。</p>
+<p>3.2 第 2.3 条所述信息，仅用于您本人对连接故障的排查。</p>
+<p>3.3 本应用不将上述任何信息用于自动化决策、广告投放或者跨应用跟踪，亦不将其用于本政策载明目的之外的用途。</p>
+<h2>4. 信息的共享、转让与公开披露</h2>
+<p>4.1 第三方软件开发工具包</p>
+<p>本应用未集成任何第三方统计分析、广告或崩溃采集 SDK，不因该等目的向任何第三方共享信息。</p>
+<p>4.2 第三方服务提供者</p>
+<p>（1）订阅更新：当您导入订阅或者请求更新订阅时，本应用按您所配置的订阅地址向相应第三方服务提供者发起请求。该地址通常内嵌您的访问凭据，该第三方因此可获知您的 IP 地址、请求时间及客户端类型。上述信息流由订阅机制本身决定。</p>
+<p>（2）流量传输：连接建立后，您的网络流量经由您所配置的第三方服务提供者的服务器传输，不经过开发者控制的任何服务器。</p>
+<p>（3）责任划分：第三方服务提供者对其所获信息的处理适用其自身的隐私政策，不在开发者的控制范围内，开发者亦不就此作出任何陈述或者担保。请您仅配置您信任的服务地址。</p>
+<p>4.3 依法披露</p>
+<p>除依据法律法规的强制性规定或者有权机关依法定程序提出的要求外，开发者不向任何第三方转让或者公开披露信息。鉴于开发者不持有第 2.2 条、第 2.3 条所述信息，就该等信息而言，开发者不具备提供的条件。</p>
+<h2>5. 信息的存储、留存与安全</h2>
+<p>5.1 存储位置</p>
+<p>（1）订阅地址、线路配置信息、第三方服务提供者返回的流量与到期信息、内核运行配置与诊断日志，存储于本应用在您设备上的沙盒目录及 App Group 共享容器内。</p>
+<p>（2）上述信息均不存储于开发者或者任何第三方控制的服务器。</p>
+<p>5.2 留存期限</p>
+<p>第 5.1 条第（1）项所述信息随本应用被卸载而一并删除；其中诊断日志另受第 2.3 条第（3）项所述删除机制的约束。</p>
+<p>5.3 安全措施</p>
+<p>本应用依赖 iOS 提供的应用沙盒隔离与文件保护（Data Protection）机制保护上述本地存储。请您同时为设备设置锁屏密码，并避免在越狱设备上使用本应用。</p>
+<p>5.4 iCloud 备份</p>
+<p>若您在系统中启用 iCloud 备份或者进行本地加密备份，前述本地数据可能作为系统备份的组成部分被备份。该备份行为由 Apple 提供并控制，适用 Apple 的隐私政策，不构成本应用向开发者的传输。</p>
+<h2>6. 网络扩展权限的使用</h2>
+<p>6.1 本应用使用 Apple 提供的 NetworkExtension 框架，在系统「设置 — 通用 — VPN 与设备管理」中创建一项 VPN 配置。该配置的用途，是将设备的网络流量交由运行在您本机的隧道进程处理，并按您所配置的规则转发。iOS 因此在状态栏显示 VPN 标识。</p>
+<p>6.2 开发者不利用该项权限进行流量分析、内容读取、内容修改或者注入，亦不记录访问记录。隧道进程运行于您的设备本地，其处理过程不向开发者回传任何数据。</p>
+<h2>7. 您的权利</h2>
+<p>7.1 查阅：您可在本应用界面内查阅当前所配置的订阅地址、线路列表，以及订阅返回的流量与到期信息。</p>
+<p>7.2 清除与更换：您可在本应用「设置 → 订阅」页执行下列操作：</p>
+<p>（1）「移除订阅」：清除订阅地址、已获取的线路列表以及订阅返回的流量与到期信息，断开当前连接，并移除本应用写入系统设置的 VPN 配置；</p>
+<p>（2）「更换订阅地址」：以新的订阅地址替换当前配置；</p>
+<p>（3）「更新订阅」：按当前订阅地址重新获取线路列表。</p>
+<p>执行第（1）项所述操作后，若您再次发起连接，操作系统将重新请求您授权添加 VPN 配置。</p>
+<p>7.3 全部删除：卸载本应用将删除本应用存储在设备容器内的全部数据，包括订阅配置与诊断日志。本应用未提供逐条删除历史订阅记录或者手动清除诊断日志的入口。</p>
+<p>7.4 撤回同意：您可通过停止使用并卸载本应用撤回对本政策的同意。</p>
+<p>7.5 鉴于开发者不存储您的个人信息，向开发者提出的查阅、复制、更正、删除或者可携带请求不存在可执行的对象；相关操作均可由您在本设备上自行完成。</p>
+<h2>8. 未成年人保护</h2>
+<p>8.1 本应用不面向 13 周岁以下的儿童，开发者不会有意收集儿童的个人信息。鉴于本应用不收集任何用户的个人信息，亦不存在收集儿童个人信息的情形。</p>
+<p>8.2 若您为未成年人，请在监护人的指导下决定是否使用本应用。监护人如对相关事项有疑问，可依第 10 条载明的方式联系开发者。</p>
+<h2>9. 本政策的变更</h2>
+<p>9.1 本政策变更时，其版本号将相应提升，并在本应用内再次向您完整展示。您需再次表示同意，方可继续使用本应用。</p>
+<p>9.2 本政策的版本号与最后更新日期载于正文末尾的版本标注行。</p>
+<h2>10. 联系我们</h2>
+<p>就本政策的任何问题、意见或者投诉，您可通过下列方式联系开发者：hachiminemo@gmail.com</p><hr><h1>Privacy Policy</h1><p class="meta">Version 1.13 · Last updated 2026-09-03</p><p>This Privacy Policy (the &quot;Policy&quot;) applies to the Application and its bundled network extension. It describes what information is processed, for what purposes and by what means, where that information is stored and for how long, and what rights you have in relation to it. Please read this Policy in full before using the Application.</p>
+<h2>1. Definitions</h2>
+<p>1.1 &quot;Application&quot; means this network proxy client software, including its main program and the bundled NetworkExtension component.</p>
+<p>1.2 &quot;Developer&quot; means the entity that develops and distributes the Application, and the party responsible for the processing described in this Policy. The Developer operates no server of any kind.</p>
+<p>1.3 &quot;Third-Party Provider&quot; means a network service provider that you select and configure yourself within the Application. No relationship of affiliation, agency, partnership, or control exists between any Third-Party Provider and the Developer.</p>
+<p>1.4 &quot;Personal Information&quot; means any information, recorded electronically or otherwise, that identifies an individual or reflects an individual&#x27;s activities, whether on its own or in combination with other information.</p>
+<h2>2. Information Collected</h2>
+<p>2.1 Information Not Collected</p>
+<p>The Application does not collect:</p>
+<p>(a) your name, date of birth, government identification number, telephone number, or any other information that identifies you directly or indirectly;</p>
+<p>(b) device identifiers for advertising or cross-application tracking purposes;</p>
+<p>(c) the addresses, domains, or destination servers you reach through the Application, the times at which connections are initiated, their duration, or any other access records or connection metadata;</p>
+<p>(d) the contents of any traffic carried through the tunnel.</p>
+<p>The Application maintains no account system of its own, does not require you to register with or sign in to the Developer, and communicates with no server operated by the Developer. It integrates no third-party analytics, advertising, or crash-reporting software development kit (SDK).</p>
+<p>2.2 Information You Provide or Generate on Your Device</p>
+<p>In the course of using the Application you may enter, import, or generate subscription URLs, server configuration data, and the access credentials such URLs commonly embed (tokens, UUIDs, and the like).</p>
+<p>This information is processed and stored locally on your device as described in Section 5 and is not transmitted to the Developer.</p>
+<p>The Application provides a &quot;Copy subscription URL&quot; action on the Settings → Subscription screen. You initiate it; the Application never performs it automatically. Content written to the system pasteboard by that action is marked local-only (it is not synchronised to your other devices via Handoff or Universal Clipboard) and is set to expire after ten minutes. Note that a subscription URL usually embeds access credentials and is equivalent in effect to a password.</p>
+<p>2.3 Local Diagnostic Log</p>
+<p>So that you can investigate connection problems yourself, the Application writes a runtime log on your device. In addition to whether the tunnel was established and what errors the core reported, that log contains a per-connection record written by the core, comprising the destination host name or IP address, the port, the outbound route used, and any failure reason. That log:</p>
+<p>(a) is stored only within the local container on your device and is never uploaded automatically to the Developer or to any third party;</p>
+<p>(b) when viewed or exported within the Application, has the destination host names and IP addresses in those per-connection records replaced with a placeholder, while ports, outbound routes, and failure reasons are retained. In other words, what you choose to share does not contain those destination addresses, whereas the original file retained on your device still does;</p>
+<p>(c) is cleared according to which process wrote it: logs written by the tunnel process (including any copy produced by the core&#x27;s log rotation) are deleted at the start of each connection; the core log written by the Application&#x27;s main process is deleted each time that log is reopened (at launch, and before each pre-connection speed test); the pre-connection speed-test record is overwritten on every round. In each case only the most recent log exists on the device at any time;</p>
+<p>(d) is deleted when the Application is uninstalled.</p>
+<p>The Application provides a &quot;Diagnostic Log&quot; screen within the Activity tab for you to review that log. You may initiate the following operations there; the Application performs neither of them automatically:</p>
+<p>(a) Copy: the log text is written to your device&#x27;s system pasteboard. The Application marks that content local-only (it is not synchronised to your other devices via Handoff or Universal Clipboard) and sets it to expire after ten minutes.</p>
+<p>(b) Export: the Application writes a copy of the log to a temporary directory on your device so that it may be sent through the system share sheet. The Application deletes that file once the share sheet is dismissed.</p>
+<p>Should you choose to send that log to the Developer in order to obtain support, that is a disclosure you make deliberately and whose scope you determine. The log may contain the addresses and domain names of the servers you have configured. You are advised to review its contents before sending it.</p>
+<h2>3. Use of Information</h2>
+<p>3.1 The information described in Section 2.2 is used solely to establish and maintain network connections locally on your device, to parse and update the subscriptions you configure, and to display server and account information in the interface.</p>
+<p>3.2 The information described in Section 2.3 is used solely for your own diagnosis of connection failures.</p>
+<p>3.3 None of the above is used for automated decision-making, advertising, or cross-application tracking, or for any purpose beyond those stated in this Policy.</p>
+<h2>4. Sharing, Transfer, and Disclosure</h2>
+<p>4.1 Third-Party SDKs</p>
+<p>The Application integrates no third-party analytics, advertising, or crash-reporting SDK and therefore shares no information with any third party for those purposes.</p>
+<p>4.2 Third-Party Providers</p>
+<p>(a) Subscription updates. Where you import a subscription or request a subscription update, the Application issues a request to the relevant Third-Party Provider using the subscription URL you configured. That URL commonly embeds your access credentials, and the provider is accordingly able to observe your IP address, the time of the request, and the client type. This flow is inherent in how subscriptions operate.</p>
+<p>(b) Traffic. Once a connection is established, your traffic passes through the servers of the Third-Party Provider you configured. It does not pass through any server controlled by the Developer.</p>
+<p>(c) Allocation of responsibility. A Third-Party Provider&#x27;s handling of the information it receives is governed by that provider&#x27;s own privacy policy, lies outside the Developer&#x27;s control, and is not the subject of any representation or warranty by the Developer. Configure only services you trust.</p>
+<p>4.3 Disclosure Required by Law</p>
+<p>Except where required by mandatory provisions of law or by a competent authority acting through lawful process, the Developer transfers and discloses no information to any third party. As the Developer does not hold the information described in Sections 2.2 and 2.3, it is in any event not in a position to produce it.</p>
+<h2>5. Storage, Retention, and Security</h2>
+<p>5.1 Where Information Is Stored</p>
+<p>(a) Subscription URLs, server configuration data, the traffic and expiry information returned by your third-party provider, core runtime configuration, and the diagnostic log are stored within the Application&#x27;s sandbox directory and App Group shared container on your device.</p>
+<p>(b) None of this information is stored on any server controlled by the Developer or by any third party.</p>
+<p>5.2 Retention</p>
+<p>The information described in Section 5.1(a) is deleted when the Application is uninstalled; the diagnostic log is additionally subject to the deletion behavior described in Section 2.3(c).</p>
+<p>5.3 Security</p>
+<p>The Application relies on the application sandbox and Data Protection mechanisms provided by iOS to protect the local storage described above. You are encouraged to set a device passcode and to avoid using the Application on a jailbroken device.</p>
+<p>5.4 iCloud Backup</p>
+<p>If you enable iCloud Backup or create an encrypted local backup, the local data described above may be included in that backup. Backup is provided and controlled by Apple and is governed by Apple&#x27;s privacy policy; it does not constitute a transmission from the Application to the Developer.</p>
+<p>6. Use of the Network Extension Permission</p>
+<p>6.1 The Application uses Apple&#x27;s NetworkExtension framework to install a VPN configuration under Settings — General — VPN &amp; Device Management. The purpose of that configuration is to hand the device&#x27;s network traffic to a tunnel process running on your own device, which forwards it according to the rules you configured. iOS displays the VPN indicator in the status bar as a consequence.</p>
+<p>6.2 The Developer does not use this permission to analyze traffic, to read, modify, or inject content, or to record access history. The tunnel process runs locally on your device and returns no data to the Developer.</p>
+<h2>7. Your Rights</h2>
+<p>7.1 Access. You may view the subscription URL, the server list, and the traffic and expiry information returned by your subscription within the Application&#x27;s interface.</p>
+<p>7.2 Clearing and replacement. The Settings → Subscription screen of the Application provides the following operations:</p>
+<p>(a) &quot;Remove subscription&quot;, which clears the subscription URL, the server list already obtained, and the traffic and expiry information returned by the subscription, disconnects the current session, and removes the VPN configuration the Application wrote to system settings;</p>
+<p>(b) &quot;Replace subscription URL&quot;, which substitutes a new subscription URL for the current configuration;</p>
+<p>(c) &quot;Update subscription&quot;, which retrieves the server list again using the current subscription URL.</p>
+<p>After performing the operation described in (a), the operating system will ask you to authorise a VPN configuration again the next time you start a connection.</p>
+<p>7.3 Deletion of everything. Uninstalling the Application deletes all data it holds in the device container, including subscription configuration and the diagnostic log. The Application provides no facility for deleting individual historical subscriptions or for clearing the diagnostic log manually.</p>
+<p>7.4 Withdrawal of consent. You may withdraw your acceptance of this Policy by ceasing to use the Application and uninstalling it.</p>
+<p>7.5 Because the Developer stores none of your Personal Information, a request to the Developer for access, portability, rectification, or erasure has no subject matter to operate on; all such operations can be carried out by you on your own device.</p>
+<h2>8. Children</h2>
+<p>8.1 The Application is not directed to children under 13, and the Developer does not knowingly collect personal information from children. As the Application collects personal information from no user, no collection of children&#x27;s information arises.</p>
+<p>8.2 If you are a minor, please decide whether to use the Application under the guidance of your guardian. Guardians with questions may contact the Developer as provided in Section 10.</p>
+<h2>9. Changes to This Policy</h2>
+<p>9.1 Where this Policy changes, its version number is raised and the full text is presented to you again within the Application. Your renewed acceptance is required before you may continue to use it.</p>
+<p>9.2 The version number and date of last update appear in the version line at the end of this text.</p>
+<h2>10. Contact</h2>
+<p>Questions, comments, or complaints regarding this Policy may be directed to the Developer at: hachiminemo@gmail.com</p><footer>Zetta · BB LAND COMPANY LIMITED · <a href="mailto:hachiminemo@gmail.com">hachiminemo@gmail.com</a></footer></body></html>
