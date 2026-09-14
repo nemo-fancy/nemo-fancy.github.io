@@ -1,4 +1,5 @@
-<!doctype html><html lang="zh-Hans"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>隐私政策 · Zetta</title><style>body{font-family:-apple-system,BlinkMacSystemFont,"Helvetica Neue",Arial,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;max-width:760px;margin:0 auto;padding:32px 20px 64px;line-height:1.7;color:#1c1c1e;background:#fff}h1{font-size:28px;margin:0 0 4px}h2{font-size:17px;margin:28px 0 6px}p{margin:6px 0}.meta{color:#6e6e73;font-size:14px;margin-bottom:24px}.lang{display:flex;gap:16px;margin-bottom:24px;font-size:14px}.lang a{color:#2563eb;text-decoration:none}hr{border:0;border-top:1px solid #e5e5ea;margin:40px 0}footer{margin-top:48px;color:#6e6e73;font-size:13px}nav a{color:#2563eb;text-decoration:none;margin-right:16px}</style></head><body><nav><a href="./">Zetta</a><a href="privacy.html">隐私政策 / Privacy</a><a href="terms.html">服务条款 / Terms</a><a href="support.html">支持 / Support</a></nav><h1>隐私政策</h1><p class="meta">版本 1.13 · 最后更新 2026-09-03</p><p>本隐私政策（以下简称「本政策」）适用于本应用及其随附的网络扩展组件。本政策说明本应用在何种情形下处理何种信息、处理的目的与方式、信息的存储位置与留存期限，以及您就此享有的权利。请您在使用本应用前完整阅读本政策。</p>
+<!doctype html><html lang="zh-Hans"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>隐私政策 · Zetta</title><style>body{font-family:-apple-system,BlinkMacSystemFont,"Helvetica Neue",Arial,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;max-width:760px;margin:0 auto;padding:32px 20px 64px;line-height:1.7;color:#1c1c1e;background:#fff}h1{font-size:28px;margin:0 0 4px}h2{font-size:17px;margin:28px 0 6px}p{margin:6px 0}.meta{color:#6e6e73;font-size:14px;margin-bottom:24px}.lang{display:flex;gap:16px;margin-bottom:24px;font-size:14px}.lang a{color:#2563eb;text-decoration:none}hr{border:0;border-top:1px solid #e5e5ea;margin:40px 0}footer{margin-top:48px;color:#6e6e73;font-size:13px}nav a{color:#2563eb;text-decoration:none;margin-right:16px}</style></head><body><nav><a href="./">Zetta</a><a href="privacy.html">隐私政策 / Privacy</a><a href="terms.html">服务条款 / Terms</a><a href="support.html">支持 / Support</a></nav><h1>隐私政策</h1><p class="meta">版本 1.15 · 最后更新 2026-09-14</p>
+<p>本隐私政策（以下简称「本政策」）适用于本应用及其随附的网络扩展组件。本政策说明本应用在何种情形下处理何种信息、处理的目的与方式、信息的存储位置与留存期限，以及您就此享有的权利。请您在使用本应用前完整阅读本政策。</p>
 <h2>1. 定义</h2>
 <p>1.1 「本应用」指本网络代理客户端软件，包括其主程序与随附的网络扩展（NetworkExtension）组件。</p>
 <p>1.2 「开发者」指本应用的开发与发布主体，即本政策项下信息处理活动的责任主体。开发者不运营任何服务端。</p>
@@ -20,7 +21,7 @@
 <p>为便于您自行排查连接故障，本应用会在您的设备本地写入运行日志。除隧道建立情况与内核错误信息外，该日志还包含由内核记录的逐条连接记录，其内容包括目标主机名或者 IP、端口、所使用的出站线路以及失败原因。该日志：</p>
 <p>（1）仅存储于您设备的本地容器内，不会由本应用自动上传至开发者或者任何第三方；</p>
 <p>（2）在本应用内查看或者导出该日志时，逐条连接记录中的目标主机名与 IP 将被替换为占位符，端口、出站线路与失败原因予以保留。即：您主动分享出去的内容不含前述目标地址，而设备本地留存的原始文件仍然包含；</p>
-<p>（3）按写入方分别清除：隧道进程写入的日志（含内核轮转产生的副本）在每次发起连接时删除；本应用主进程写入的内核日志在每次重新开启日志（应用启动、以及每次连接前测速）时删除；连接前测速的记录每轮覆盖写入。即设备上始终仅保留最近一次的日志；</p>
+<p>（3）按写入方与内容分别清除：隧道进程写入的内核日志（含轮转产生的副本，其中包含逐条连接记录）在每次发起连接时删除；隧道进程自身的运行日志（仅记录隧道建立、网络切换、启动与停止等事件，不包含连接记录）在每次发起连接时滚存，设备上保留上一次连接的一份；本应用主进程写入的内核日志在每次重新开启日志（应用启动、以及每次连接前测速）时删除；连接前测速的记录每轮覆盖写入。即含连接记录的日志始终仅保留最近一次；</p>
 <p>（4）随本应用被卸载而一并删除。</p>
 <p>本应用于「活动」页内提供「诊断日志」功能，供您查阅上述日志。您可在该页面主动执行下列操作，该等操作均由您发起，本应用不会自动执行：</p>
 <p>（1）复制：日志文本将写入您设备的系统剪贴板。本应用已将该项内容限定为仅在本机可用（不经由「接力」等功能同步至您的其他设备），并设定十分钟后自动失效。</p>
@@ -37,6 +38,7 @@
 <p>（1）订阅更新：当您导入订阅或者请求更新订阅时，本应用按您所配置的订阅地址向相应第三方服务提供者发起请求。该地址通常内嵌您的访问凭据，该第三方因此可获知您的 IP 地址、请求时间及客户端类型。上述信息流由订阅机制本身决定。</p>
 <p>（2）流量传输：连接建立后，您的网络流量经由您所配置的第三方服务提供者的服务器传输，不经过开发者控制的任何服务器。</p>
 <p>（3）责任划分：第三方服务提供者对其所获信息的处理适用其自身的隐私政策，不在开发者的控制范围内，开发者亦不就此作出任何陈述或者担保。请您仅配置您信任的服务地址。</p>
+<p>（4）首次启动连通性探测：本应用在首次启动时，向 Apple 的连通性检测地址（captive.apple.com）发起一次 HEAD 请求。该请求不携带任何设备标识、账户信息或者您的配置内容，其唯一目的是让操作系统在此时弹出无线数据访问授权（部分机型），以免该授权在您首次导入订阅或者发起连接时中途弹出而导致该次操作失败。该探测在本应用的每次安装中仅执行一次，其结果不被记录、不被上报，亦不影响本应用的任何行为。</p>
 <p>4.3 依法披露</p>
 <p>除依据法律法规的强制性规定或者有权机关依法定程序提出的要求外，开发者不向任何第三方转让或者公开披露信息。鉴于开发者不持有第 2.2 条、第 2.3 条所述信息，就该等信息而言，开发者不具备提供的条件。</p>
 <h2>5. 信息的存储、留存与安全</h2>
@@ -69,7 +71,8 @@
 <p>9.1 本政策变更时，其版本号将相应提升，并在本应用内再次向您完整展示。您需再次表示同意，方可继续使用本应用。</p>
 <p>9.2 本政策的版本号与最后更新日期载于正文末尾的版本标注行。</p>
 <h2>10. 联系我们</h2>
-<p>就本政策的任何问题、意见或者投诉，您可通过下列方式联系开发者：hachiminemo@gmail.com</p><hr><h1>Privacy Policy</h1><p class="meta">Version 1.13 · Last updated 2026-09-03</p><p>This Privacy Policy (the &quot;Policy&quot;) applies to the Application and its bundled network extension. It describes what information is processed, for what purposes and by what means, where that information is stored and for how long, and what rights you have in relation to it. Please read this Policy in full before using the Application.</p>
+<p>就本政策的任何问题、意见或者投诉，您可通过下列方式联系开发者：hachiminemo@gmail.com</p><hr><h1>Privacy Policy</h1><p class="meta">Version 1.15 · Last updated 2026-09-14</p>
+<p>This Privacy Policy (the &quot;Policy&quot;) applies to the Application and its bundled network extension. It describes what information is processed, for what purposes and by what means, where that information is stored and for how long, and what rights you have in relation to it. Please read this Policy in full before using the Application.</p>
 <h2>1. Definitions</h2>
 <p>1.1 &quot;Application&quot; means this network proxy client software, including its main program and the bundled NetworkExtension component.</p>
 <p>1.2 &quot;Developer&quot; means the entity that develops and distributes the Application, and the party responsible for the processing described in this Policy. The Developer operates no server of any kind.</p>
@@ -91,7 +94,7 @@
 <p>So that you can investigate connection problems yourself, the Application writes a runtime log on your device. In addition to whether the tunnel was established and what errors the core reported, that log contains a per-connection record written by the core, comprising the destination host name or IP address, the port, the outbound route used, and any failure reason. That log:</p>
 <p>(a) is stored only within the local container on your device and is never uploaded automatically to the Developer or to any third party;</p>
 <p>(b) when viewed or exported within the Application, has the destination host names and IP addresses in those per-connection records replaced with a placeholder, while ports, outbound routes, and failure reasons are retained. In other words, what you choose to share does not contain those destination addresses, whereas the original file retained on your device still does;</p>
-<p>(c) is cleared according to which process wrote it: logs written by the tunnel process (including any copy produced by the core&#x27;s log rotation) are deleted at the start of each connection; the core log written by the Application&#x27;s main process is deleted each time that log is reopened (at launch, and before each pre-connection speed test); the pre-connection speed-test record is overwritten on every round. In each case only the most recent log exists on the device at any time;</p>
+<p>(c) is cleared according to which process wrote it and what it contains: the core log written by the tunnel process (including any copy produced by the core&#x27;s log rotation, and containing the per-connection records) is deleted at the start of each connection; the tunnel process&#x27;s own runtime log (which records only events such as tunnel start and stop and network changes, and contains no connection records) is rotated at the start of each connection so that one copy from the previous connection is kept on the device; the core log written by the Application&#x27;s main process is deleted each time that log is reopened (at launch, and before each pre-connection speed test); the pre-connection speed-test record is overwritten on every round. Logs containing connection records therefore exist on the device only for the most recent connection;</p>
 <p>(d) is deleted when the Application is uninstalled.</p>
 <p>The Application provides a &quot;Diagnostic Log&quot; screen within the Activity tab for you to review that log. You may initiate the following operations there; the Application performs neither of them automatically:</p>
 <p>(a) Copy: the log text is written to your device&#x27;s system pasteboard. The Application marks that content local-only (it is not synchronised to your other devices via Handoff or Universal Clipboard) and sets it to expire after ten minutes.</p>
@@ -108,6 +111,7 @@
 <p>(a) Subscription updates. Where you import a subscription or request a subscription update, the Application issues a request to the relevant Third-Party Provider using the subscription URL you configured. That URL commonly embeds your access credentials, and the provider is accordingly able to observe your IP address, the time of the request, and the client type. This flow is inherent in how subscriptions operate.</p>
 <p>(b) Traffic. Once a connection is established, your traffic passes through the servers of the Third-Party Provider you configured. It does not pass through any server controlled by the Developer.</p>
 <p>(c) Allocation of responsibility. A Third-Party Provider&#x27;s handling of the information it receives is governed by that provider&#x27;s own privacy policy, lies outside the Developer&#x27;s control, and is not the subject of any representation or warranty by the Developer. Configure only services you trust.</p>
+<p>(d) Launch connectivity check. On first launch, the Application issues a single HEAD request to Apple&#x27;s connectivity-check endpoint (captive.apple.com). The request carries no device identifier, account information, or configuration content. Its sole purpose is to have the operating system present its wireless-data authorization prompt (on device models that have one) at that moment, rather than mid-way through your first subscription import or connection, where it would cause that operation to fail. It runs once per installation; its result is neither recorded nor reported and does not affect the Application&#x27;s behaviour.</p>
 <p>4.3 Disclosure Required by Law</p>
 <p>Except where required by mandatory provisions of law or by a competent authority acting through lawful process, the Developer transfers and discloses no information to any third party. As the Developer does not hold the information described in Sections 2.2 and 2.3, it is in any event not in a position to produce it.</p>
 <h2>5. Storage, Retention, and Security</h2>
@@ -120,7 +124,7 @@
 <p>The Application relies on the application sandbox and Data Protection mechanisms provided by iOS to protect the local storage described above. You are encouraged to set a device passcode and to avoid using the Application on a jailbroken device.</p>
 <p>5.4 iCloud Backup</p>
 <p>If you enable iCloud Backup or create an encrypted local backup, the local data described above may be included in that backup. Backup is provided and controlled by Apple and is governed by Apple&#x27;s privacy policy; it does not constitute a transmission from the Application to the Developer.</p>
-<p>6. Use of the Network Extension Permission</p>
+<h2>6. Use of the Network Extension Permission</h2>
 <p>6.1 The Application uses Apple&#x27;s NetworkExtension framework to install a VPN configuration under Settings — General — VPN &amp; Device Management. The purpose of that configuration is to hand the device&#x27;s network traffic to a tunnel process running on your own device, which forwards it according to the rules you configured. iOS displays the VPN indicator in the status bar as a consequence.</p>
 <p>6.2 The Developer does not use this permission to analyze traffic, to read, modify, or inject content, or to record access history. The tunnel process runs locally on your device and returns no data to the Developer.</p>
 <h2>7. Your Rights</h2>
