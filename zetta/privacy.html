@@ -1,4 +1,4 @@
-<!doctype html><html lang="zh-Hans"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>隐私政策 · Zetta</title><style>body{font-family:-apple-system,BlinkMacSystemFont,"Helvetica Neue",Arial,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;max-width:760px;margin:0 auto;padding:32px 20px 64px;line-height:1.7;color:#1c1c1e;background:#fff}h1{font-size:28px;margin:0 0 4px}h2{font-size:17px;margin:28px 0 6px}p{margin:6px 0}.meta{color:#6e6e73;font-size:14px;margin-bottom:24px}.lang{display:flex;gap:16px;margin-bottom:24px;font-size:14px}.lang a{color:#2563eb;text-decoration:none}hr{border:0;border-top:1px solid #e5e5ea;margin:40px 0}footer{margin-top:48px;color:#6e6e73;font-size:13px}nav a{color:#2563eb;text-decoration:none;margin-right:16px}</style></head><body><nav><a href="./">Zetta</a><a href="privacy.html">隐私政策 / Privacy</a><a href="terms.html">服务条款 / Terms</a><a href="support.html">支持 / Support</a></nav><h1>隐私政策</h1><p class="meta">版本 1.16 · 最后更新 2026-09-17</p>
+<!doctype html><html lang="zh-Hans"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>隐私政策 · Zetta</title><style>body{font-family:-apple-system,BlinkMacSystemFont,"Helvetica Neue",Arial,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;max-width:760px;margin:0 auto;padding:32px 20px 64px;line-height:1.7;color:#1c1c1e;background:#fff}h1{font-size:28px;margin:0 0 4px}h2{font-size:17px;margin:28px 0 6px}p{margin:6px 0}.meta{color:#6e6e73;font-size:14px;margin-bottom:24px}.lang{display:flex;gap:16px;margin-bottom:24px;font-size:14px}.lang a{color:#2563eb;text-decoration:none}hr{border:0;border-top:1px solid #e5e5ea;margin:40px 0}footer{margin-top:48px;color:#6e6e73;font-size:13px}nav a{color:#2563eb;text-decoration:none;margin-right:16px}</style></head><body><nav><a href="./">Zetta</a><a href="privacy.html">隐私政策 / Privacy</a><a href="terms.html">服务条款 / Terms</a><a href="support.html">支持 / Support</a></nav><h1>隐私政策</h1><p class="meta">版本 1.17 · 最后更新 2026-10-09</p>
 <p>本隐私政策（以下简称「本政策」）适用于本应用及其随附的网络扩展组件。本政策说明本应用在何种情形下处理何种信息、处理的目的与方式、信息的存储位置与留存期限，以及您就此享有的权利。请您在使用本应用前完整阅读本政策。</p>
 <h2>1. 定义</h2>
 <p>1.1 「本应用」指本网络代理客户端软件，包括其主程序与随附的网络扩展（NetworkExtension）组件。</p>
@@ -14,9 +14,9 @@
 <p>（4）经由隧道传输的任何流量内容。</p>
 <p>本应用不设置自有账户体系，不要求您向开发者注册或登录，不与任何由开发者运营的服务器通信，亦未集成任何第三方统计分析、广告或崩溃采集软件开发工具包（SDK）。</p>
 <p>2.2 您在设备上提供或生成的信息</p>
-<p>您在使用本应用的过程中可能输入、导入或生成下列信息：订阅地址、线路配置信息，以及订阅地址中通常内嵌的访问凭据（如令牌、UUID 等）。</p>
+<p>您在使用本应用的过程中可能输入、导入或生成下列信息：订阅地址、线路配置信息（包括您手动添加或扫码添加的单条线路），以及订阅地址与线路链接中通常内嵌的访问凭据（如令牌、UUID、密码等）；您在设置中填写的受信任 Wi-Fi 名称、DNS 服务器与本地域名映射、规则集地址与分流规则。</p>
 <p>上述信息由本应用在您的设备本地处理与存储，存储方式见第 5 条，不向开发者传输。</p>
-<p>本应用于「设置 → 订阅」页内提供「复制订阅地址」操作。该操作由您主动发起，本应用不会自动执行；经由该操作写入系统剪贴板的内容已被限定为仅在本机可用（不经由「接力」等功能同步至您的其他设备），并设定十分钟后自动失效。请注意，订阅地址通常内嵌访问凭据，效力等同于密码。</p>
+<p>本应用于「订阅」页订阅卡的菜单与「设置 → 当前订阅」页内提供「复制订阅地址」操作。该操作由您主动发起，本应用不会自动执行；经由该操作写入系统剪贴板的内容已被限定为仅在本机可用（不经由「接力」等功能同步至您的其他设备），并设定十分钟后自动失效。请注意，订阅地址通常内嵌访问凭据，效力等同于密码。</p>
 <p>2.3 本地诊断日志</p>
 <p>为便于您自行排查连接故障，本应用会在您的设备本地写入运行日志。除隧道建立情况与内核错误信息外，该日志还包含由内核记录的逐条连接记录，其内容包括目标主机名或者 IP、端口、所使用的出站线路以及失败原因。该日志：</p>
 <p>（1）仅存储于您设备的本地容器内，不会由本应用自动上传至开发者或者任何第三方；</p>
@@ -27,52 +27,76 @@
 <p>（1）复制：日志文本将写入您设备的系统剪贴板。本应用已将该项内容限定为仅在本机可用（不经由「接力」等功能同步至您的其他设备），并设定十分钟后自动失效。</p>
 <p>（2）导出：本应用在您设备的临时目录内生成一份日志文件，以供您通过系统分享功能发送。该文件在分享界面关闭后即由本应用删除。</p>
 <p>若您为获得技术支持而主动将该日志发送给开发者，该行为属于您的主动提供，其内容与范围由您自行决定。日志内容可能包含您所配置的线路地址与服务器域名，建议您在发送前自行查阅。</p>
+<p>2.4 相机与照片</p>
+<p>本应用提供扫描二维码添加订阅或线路的功能：</p>
+<p>（1）相机：仅在您打开扫码页面时使用，用于在设备本地识别二维码；画面不被保存、不被上传，本应用切到后台时即停止使用相机。</p>
+<p>（2）照片：您可以选择一张图片识别其中的二维码。该功能使用系统提供的照片选择器，本应用无法访问您的相册，只能读取您选中的那一张图片；该图片在设备本地识别后即被丢弃。</p>
+<p>（3）识别出的订阅或线路须经您在确认页面确认后才会添加，本应用不会因扫码而自动连接。</p>
+<p>2.5 设备本地的记录与显示</p>
+<p>为实现相应功能，本应用在您的设备本地保存或显示下列信息，均不向开发者传输：</p>
+<p>（1）流量记录：隧道进程按天累计经由本应用的流量字节数（区分直连与经线路两类），最多保留 90 天，不含任何域名、地址或线路名称。您可在「活动」页的「流量记录」中「清除记录」。</p>
+<p>（2）线路名单：最近使用与收藏的线路，以及测速最快的若干线路（用于「自动」线路的排序）。仅保存线路名称及其先后顺序，不保存时间与延迟；按订阅分开保存，以订阅地址的摘要值区分，不保存订阅地址本身；移除该订阅时一并删除。</p>
+<p>（3）实时活动（默认关闭）：开启后，连接建立的时刻、最近一次确认连接仍在的时刻以及线路名称（可设置为不显示）将显示在锁屏与灵动岛上，因而也可能显示在与本设备配对的 Apple Watch、Mac 或者车载设备上，且无需解锁即可看到。本应用在后台时无法得知连接的变化，因此该显示只写明最近一次确认的时刻；您在锁屏、控制中心、小组件或者快捷指令中断开连接时，它会更新为已断开。</p>
+<p>（4）通知：本应用仅发送设备本地通知，包括订阅到期提醒，以及开启「断线提醒」（默认关闭）后，由隧道进程在连接意外断开或者自动重连被暂停时发出的提醒。通知内容不包含线路名称、服务器地址或者订阅地址；订阅到期提醒只显示到期日期。</p>
+<p>（5）小组件与控制中心：您添加的主屏幕与锁屏小组件、控制中心控件会显示连接状态与线路名称（部分小组件还显示连接时长与流量）。锁屏小组件与控制中心无需解锁即可看到。</p>
 <h2>3. 信息的使用</h2>
-<p>3.1 第 2.2 条所述信息，仅用于在您的设备本地建立与维持网络连接、解析与更新您所配置的订阅内容，以及在界面中呈现线路与账户信息。</p>
+<p>3.1 第 2.2 条所述信息，仅用于在您的设备本地建立与维持网络连接、解析与更新您所配置的订阅内容、按您的设置选择线路，以及在界面中呈现线路与账户信息。第 2.4 条所述信息仅用于识别您扫描的二维码；第 2.5 条所述信息仅用于向您呈现相应内容。</p>
 <p>3.2 第 2.3 条所述信息，仅用于您本人对连接故障的排查。</p>
 <p>3.3 本应用不将上述任何信息用于自动化决策、广告投放或者跨应用跟踪，亦不将其用于本政策载明目的之外的用途。</p>
 <h2>4. 信息的共享、转让与公开披露</h2>
 <p>4.1 第三方软件开发工具包</p>
 <p>本应用未集成任何第三方统计分析、广告或崩溃采集 SDK，不因该等目的向任何第三方共享信息。</p>
 <p>4.2 第三方服务提供者</p>
-<p>（1）订阅更新：当您导入订阅或者请求更新订阅时，本应用按您所配置的订阅地址向相应第三方服务提供者发起请求。该地址通常内嵌您的访问凭据，该第三方因此可获知您的 IP 地址、请求时间及客户端类型。上述信息流由订阅机制本身决定。</p>
+<p>（1）订阅更新：当您导入订阅或者请求更新订阅时，本应用按您所配置的订阅地址向相应第三方服务提供者发起请求。开启「自动更新订阅」时，本应用在回到前台时按各条订阅各自的更新间隔，逐条向其订阅地址发起请求，包括当前未在使用的订阅。该地址通常内嵌您的访问凭据，该第三方因此可获知您的 IP 地址、请求时间及客户端类型。上述信息流由订阅机制本身决定。</p>
 <p>（2）流量传输：连接建立后，您的网络流量经由您所配置的第三方服务提供者的服务器传输，不经过开发者控制的任何服务器。</p>
 <p>（3）责任划分：第三方服务提供者对其所获信息的处理适用其自身的隐私政策，不在开发者的控制范围内，开发者亦不就此作出任何陈述或者担保。请您仅配置您信任的服务地址。</p>
 <p>（4）首次启动连通性探测：本应用在首次启动时，向 Apple 的连通性检测地址（captive.apple.com）发起一次 HEAD 请求。该请求不携带任何设备标识、账户信息或者您的配置内容，其唯一目的是让操作系统在此时弹出无线数据访问授权（部分机型），以免该授权在您首次导入订阅或者发起连接时中途弹出而导致该次操作失败。该探测在本应用的每次安装中仅执行一次，其结果不被记录、不被上报，亦不影响本应用的任何行为。</p>
-<p>（5）设备时钟校正：部分线路协议要求客户端与服务器的时间相差在数十秒以内，设备时钟不准会使该等线路全部无法连接。为此本应用在下列三种情形下查询外部时间源，仅用于计算本设备时钟与标准时间的偏差：① 连接前测速与发起连接之前，向公共 NTP 服务（默认 time.apple.com）查询一次；② 上述查询失败时，改向 cloudflare.com、apple.com、microsoft.com 三个站点发起 HEAD 请求，读取应答头中的标准时间并取一致值；③ 连接建立后，隧道进程按固定间隔（默认 30 分钟）以及在设备唤醒、网络切换时，再次向同一 NTP 服务查询。上述请求均不携带任何设备标识、账户信息或者您的配置内容；相应服务可获知您的 IP 地址与请求时间。查询结果仅在设备本地用于校正时间偏差，不被上报。</p>
+<p>（5）设备时钟校正：部分线路协议要求客户端与服务器的时间相差在数十秒以内，设备时钟不准会使该等线路全部无法连接。为此本应用在下列三种情形下查询外部时间源，仅用于计算本设备时钟与标准时间的偏差：① 连接前测速与发起连接之前（以及开启第（7）项所述功能后的每次冷启动时），向公共 NTP 服务（默认 time.apple.com）查询一次；② 上述查询失败时，改向 cloudflare.com、apple.com、microsoft.com 三个站点发起 HEAD 请求，读取应答头中的标准时间并取一致值；③ 连接建立后，隧道进程按固定间隔（默认 30 分钟）以及在设备唤醒、网络切换或者系统时间变更时，再次向同一 NTP 服务查询。上述请求均不携带任何设备标识、账户信息或者您的配置内容；相应服务可获知您的 IP 地址与请求时间。查询结果仅在设备本地用于校正时间偏差，不被上报。</p>
+<p>（6）线路测速与健康检查：您发起测速时，本应用经由每条线路访问测速目标（内核内置的检测地址，或者您在「设置 → 测速设置」中填写的地址）以测量延迟。选择「自动」线路或者开启备用订阅后，隧道进程经由线路访问 http://www.gstatic.com/generate_204 进行健康检查：选择「自动」线路后，在有流量时约每 10 分钟对当前订阅中最多 25 条线路检查一次。为某一份订阅开启「主订阅不可用时使用」后，隧道进程在有流量时约每 2 分钟检查一次，并在当前线路不可用时经由该备用订阅的服务器转发您的流量，即您的流量可能经由另一家第三方服务提供者的服务器传输。上述健康检查在发起连接或者重新载入配置时也各执行一次。</p>
+<p>（7）启动时自动选线路（默认关闭）：开启后，本应用在每次冷启动且未连接时，执行一次第（5）项所述的时钟校正，并对当前订阅的线路测速一次，以选出一条线路；本应用不会因此自动连接。</p>
+<p>（8）网络诊断：仅在您点击「开始诊断」时，本应用向 Apple 的连通性检测地址（captive.apple.com）发起一次 HEAD 请求，并对当前所选线路测速一次。诊断结果仅保存在内存中，不写入设备存储，不被上报。</p>
+<p>（9）规则集：仅在您添加或者更新规则集时，本应用向您填写的规则集地址发起请求，以下载规则列表；该地址的提供者可获知您的 IP 地址与请求时间。下载内容转换后仅保存在设备本地。</p>
+<p>（10）域名解析：本应用使用的 DNS 服务器（默认 Cloudflare 与阿里 DNS，可在「设置 → DNS」中更改）在处理解析请求时，可获知被查询的域名与发出请求的 IP 地址。</p>
+<p>（11）苹果推送线路探测：开启「包含苹果推送服务」（默认开启）时，连接建立后，隧道进程分别经由线路与直连向 Apple 的连通性检测地址（http://captive.apple.com/hotspot-detect.html）发起小型 HTTP 请求，以决定苹果推送走线路还是直连。该探测在发起连接或者重新载入配置时执行一次，此后仅在有推送连接发生时执行。请求不携带任何设备标识、账户信息或者您的配置内容；Apple 可获知发出请求的 IP 地址与请求时间。</p>
 <p>4.3 依法披露</p>
 <p>除依据法律法规的强制性规定或者有权机关依法定程序提出的要求外，开发者不向任何第三方转让或者公开披露信息。鉴于开发者不持有第 2.2 条、第 2.3 条所述信息，就该等信息而言，开发者不具备提供的条件。</p>
 <h2>5. 信息的存储、留存与安全</h2>
 <p>5.1 存储位置</p>
-<p>（1）订阅地址、线路配置信息、第三方服务提供者返回的流量与到期信息、内核运行配置与诊断日志，存储于本应用在您设备上的沙盒目录及 App Group 共享容器内。</p>
-<p>（2）上述信息均不存储于开发者或者任何第三方控制的服务器。</p>
+<p>（1）订阅地址、线路配置信息及其中内嵌的访问凭据（包括手动添加的线路），存储于本应用沙盒内 Application Support 目录下的一个文件中。该文件不参与 iCloud 备份与电脑备份，并在设备重启后首次解锁之前保持加密。当前或者最近一次连接所用的线路配置与凭据另有一份存于系统 VPN 配置内，见第（3）项。</p>
+<p>（2）订阅名称、第三方服务提供者返回的流量与到期信息、诊断日志，以及第 2.2 条、第 2.5 条所述的其他信息，存储于本应用在您设备上的沙盒目录及 App Group 共享容器内。受信任 Wi-Fi 名称还会写入系统 VPN 配置的按需连接规则（见第 6.3 条）。</p>
+<p>（3）当前或者最近一次连接所用的内核运行配置，包括其中线路（含备用订阅的线路）的访问凭据，存储于系统设置中的 VPN 配置内，以便系统自行发起连接（例如自动连接，或者您在系统设置中打开 VPN）。该配置在您下次连接或者连接中配置更新时被替换；在「移除订阅」移除正在使用的订阅时一并删除。</p>
+<p>（4）上述信息均不存储于开发者或者任何第三方控制的服务器。</p>
 <p>5.2 留存期限</p>
-<p>第 5.1 条第（1）项所述信息随本应用被卸载而一并删除；其中诊断日志另受第 2.3 条第（3）项所述删除机制的约束。</p>
+<p>第 5.1 条第（1）项至第（3）项所述信息随本应用被卸载而一并删除；其中诊断日志另受第 2.3 条第（3）项、流量记录另受第 2.5 条第（1）项所述删除机制的约束。</p>
 <p>5.3 安全措施</p>
 <p>本应用依赖 iOS 提供的应用沙盒隔离与文件保护（Data Protection）机制保护上述本地存储。请您同时为设备设置锁屏密码，并避免在越狱设备上使用本应用。</p>
 <p>5.4 iCloud 备份</p>
-<p>若您在系统中启用 iCloud 备份或者进行本地加密备份，前述本地数据可能作为系统备份的组成部分被备份。该备份行为由 Apple 提供并控制，适用 Apple 的隐私政策，不构成本应用向开发者的传输。</p>
+<p>若您在系统中启用 iCloud 备份或者进行本地加密备份，前述本地数据（第 5.1 条第（1）项所述包含访问凭据的文件除外）可能作为系统备份的组成部分被备份。该备份行为由 Apple 提供并控制，适用 Apple 的隐私政策，不构成本应用向开发者的传输。</p>
 <h2>6. 网络扩展权限的使用</h2>
 <p>6.1 本应用使用 Apple 提供的 NetworkExtension 框架，在系统「设置 — 通用 — VPN 与设备管理」中创建一项 VPN 配置。该配置的用途，是将设备的网络流量交由运行在您本机的隧道进程处理，并按您所配置的规则转发。iOS 因此在状态栏显示 VPN 标识。</p>
 <p>6.2 开发者不利用该项权限进行流量分析、内容读取、内容修改或者注入，亦不记录访问记录。隧道进程运行于您的设备本地，其处理过程不向开发者回传任何数据。</p>
+<p>6.3 若您在「设置 → 自动连接」中添加受信任的 Wi-Fi 或者选择自动连接的网络类型，本应用将相应的按需连接规则写入系统 VPN 配置，由系统按网络名称与网络类型决定何时连接或者断开。本应用不读取您当前所连 Wi-Fi 的名称。名称相同的 Wi-Fi 网络均会被视为受信任的网络。</p>
 <h2>7. 您的权利</h2>
 <p>7.1 查阅：您可在本应用界面内查阅当前所配置的订阅地址、线路列表，以及订阅返回的流量与到期信息。</p>
-<p>7.2 清除与更换：您可在本应用「设置 → 订阅」页执行下列操作：</p>
-<p>（1）「移除订阅」：清除订阅地址、已获取的线路列表以及订阅返回的流量与到期信息，断开当前连接，并移除本应用写入系统设置的 VPN 配置；</p>
+<p>7.2 清除与更换：您可在本应用中执行下列操作：</p>
+<p>（1）在「设置 → 当前订阅」页「移除订阅」，或者在「订阅」页订阅卡的菜单中「移除」：清除该订阅的地址、已获取的线路列表、订阅返回的流量与到期信息，以及该订阅的线路名单（第 2.5 条第（2）项）。移除的若是正在使用的订阅，本应用将断开当前连接，并移除本应用写入系统设置的 VPN 配置；移除的若是当前连接正作为备用的订阅，其线路将从当前连接中移除；</p>
 <p>（2）「更换订阅地址」：以新的订阅地址替换当前配置；</p>
-<p>（3）「更新订阅」：按当前订阅地址重新获取线路列表。</p>
-<p>执行第（1）项所述操作后，若您再次发起连接，操作系统将重新请求您授权添加 VPN 配置。</p>
-<p>7.3 全部删除：卸载本应用将删除本应用存储在设备容器内的全部数据，包括订阅配置与诊断日志。本应用未提供逐条删除历史订阅记录或者手动清除诊断日志的入口。</p>
+<p>（3）「更新订阅」：按当前订阅地址重新获取线路列表；</p>
+<p>（4）在「订阅」页的「手动添加的线路」中逐条「移除」您手动添加的线路；</p>
+<p>（5）在「活动」页的「流量记录」中「清除记录」；</p>
+<p>（6）在「设置 → 分流模式」中「删除」规则集，在「设置 → DNS」中「删除」本地域名映射或者「恢复默认 DNS」，在「设置 → 自动连接」中「移除」受信任的 Wi-Fi。</p>
+<p>执行第（1）项所述操作而移除了 VPN 配置后，若您再次发起连接，操作系统将重新请求您授权添加 VPN 配置。</p>
+<p>7.3 全部删除：卸载本应用将删除本应用存储在设备容器内的全部数据，包括订阅配置与诊断日志。本应用未提供手动清除诊断日志的入口，诊断日志按第 2.3 条第（3）项自动清除。</p>
 <p>7.4 撤回同意：您可通过停止使用并卸载本应用撤回对本政策的同意。</p>
 <p>7.5 鉴于开发者不存储您的个人信息，向开发者提出的查阅、复制、更正、删除或者可携带请求不存在可执行的对象；相关操作均可由您在本设备上自行完成。</p>
 <h2>8. 未成年人保护</h2>
 <p>8.1 本应用不面向 13 周岁以下的儿童，开发者不会有意收集儿童的个人信息。鉴于本应用不收集任何用户的个人信息，亦不存在收集儿童个人信息的情形。</p>
 <p>8.2 若您为未成年人，请在监护人的指导下决定是否使用本应用。监护人如对相关事项有疑问，可依第 10 条载明的方式联系开发者。</p>
 <h2>9. 本政策的变更</h2>
-<p>9.1 本政策变更时，其版本号将相应提升，并在本应用内再次向您完整展示。您需再次表示同意，方可继续使用本应用。</p>
+<p>9.1 本政策变更时，其版本号将相应提升。现行文本可随时在本应用「设置」中的「关于」页查阅。本应用更新后您继续使用，即表示您接受变更后的本政策。</p>
 <p>9.2 本政策的版本号与最后更新日期载于正文末尾的版本标注行。</p>
 <h2>10. 联系我们</h2>
-<p>就本政策的任何问题、意见或者投诉，您可通过下列方式联系开发者：hachiminemo@gmail.com</p><hr><h1>Privacy Policy</h1><p class="meta">Version 1.16 · Last updated 2026-09-17</p>
+<p>就本政策的任何问题、意见或者投诉，您可通过下列方式联系开发者：hachiminemo@gmail.com</p><hr><h1>Privacy Policy</h1><p class="meta">Version 1.17 · Last updated 2026-10-09</p>
 <p>This Privacy Policy (the &quot;Policy&quot;) applies to the Application and its bundled network extension. It describes what information is processed, for what purposes and by what means, where that information is stored and for how long, and what rights you have in relation to it. Please read this Policy in full before using the Application.</p>
 <h2>1. Definitions</h2>
 <p>1.1 &quot;Application&quot; means this network proxy client software, including its main program and the bundled NetworkExtension component.</p>
@@ -88,62 +112,86 @@
 <p>(d) the contents of any traffic carried through the tunnel.</p>
 <p>The Application maintains no account system of its own, does not require you to register with or sign in to the Developer, and communicates with no server operated by the Developer. It integrates no third-party analytics, advertising, or crash-reporting software development kit (SDK).</p>
 <p>2.2 Information You Provide or Generate on Your Device</p>
-<p>In the course of using the Application you may enter, import, or generate subscription URLs, server configuration data, and the access credentials such URLs commonly embed (tokens, UUIDs, and the like).</p>
+<p>In the course of using the Application you may enter, import, or generate subscription URLs, server configuration data (including individual servers you add manually or by scanning a QR code), and the access credentials such URLs and server links commonly embed (tokens, UUIDs, passwords, and the like); and, in Settings, the names of trusted Wi-Fi networks, DNS servers and local domain mappings, rule-set addresses, and routing rules.</p>
 <p>This information is processed and stored locally on your device as described in Section 5 and is not transmitted to the Developer.</p>
-<p>The Application provides a &quot;Copy subscription URL&quot; action on the Settings → Subscription screen. You initiate it; the Application never performs it automatically. Content written to the system pasteboard by that action is marked local-only (it is not synchronised to your other devices via Handoff or Universal Clipboard) and is set to expire after ten minutes. Note that a subscription URL usually embeds access credentials and is equivalent in effect to a password.</p>
+<p>The Application provides a &quot;Copy subscription URL&quot; action in the menu of each subscription card on the Subscriptions tab and on the Settings → Current subscription screen. You initiate it; the Application never performs it automatically. Content written to the system pasteboard by that action is marked local-only (it is not synchronised to your other devices via Handoff or Universal Clipboard) and is set to expire after ten minutes. Note that a subscription URL usually embeds access credentials and is equivalent in effect to a password.</p>
 <p>2.3 Local Diagnostic Log</p>
 <p>So that you can investigate connection problems yourself, the Application writes a runtime log on your device. In addition to whether the tunnel was established and what errors the core reported, that log contains a per-connection record written by the core, comprising the destination host name or IP address, the port, the outbound route used, and any failure reason. That log:</p>
 <p>(a) is stored only within the local container on your device and is never uploaded automatically to the Developer or to any third party;</p>
 <p>(b) when viewed or exported within the Application, has the destination host names and IP addresses in those per-connection records replaced with a placeholder, while ports, outbound routes, and failure reasons are retained. In other words, what you choose to share does not contain those destination addresses, whereas the original file retained on your device still does;</p>
 <p>(c) is cleared according to which process wrote it and what it contains: the core log written by the tunnel process (including any copy produced by the core&#x27;s log rotation, and containing the per-connection records) is deleted at the start of each connection; the tunnel process&#x27;s own runtime log (which records only events such as tunnel start and stop and network changes, and contains no connection records) is rotated at the start of each connection so that one copy from the previous connection is kept on the device; the core log written by the Application&#x27;s main process is deleted each time that log is reopened (at launch, and before each pre-connection speed test); the pre-connection speed-test record is overwritten on every round. Logs containing connection records therefore exist on the device only for the most recent connection;</p>
 <p>(d) is deleted when the Application is uninstalled.</p>
-<p>The Application provides a &quot;Diagnostic Log&quot; screen within the Activity tab for you to review that log. You may initiate the following operations there; the Application performs neither of them automatically:</p>
+<p>The Application provides a &quot;Diagnostic log&quot; screen within the Activity tab for you to review that log. You may initiate the following operations there; the Application performs neither of them automatically:</p>
 <p>(a) Copy: the log text is written to your device&#x27;s system pasteboard. The Application marks that content local-only (it is not synchronised to your other devices via Handoff or Universal Clipboard) and sets it to expire after ten minutes.</p>
 <p>(b) Export: the Application writes a copy of the log to a temporary directory on your device so that it may be sent through the system share sheet. The Application deletes that file once the share sheet is dismissed.</p>
 <p>Should you choose to send that log to the Developer in order to obtain support, that is a disclosure you make deliberately and whose scope you determine. The log may contain the addresses and domain names of the servers you have configured. You are advised to review its contents before sending it.</p>
+<p>2.4 Camera and Photos</p>
+<p>The Application lets you add a subscription or servers by scanning a QR code:</p>
+<p>(a) Camera: used only while the scanning screen is open, to recognise the QR code on your device. Images are neither stored nor uploaded, and the camera is released when the Application moves to the background.</p>
+<p>(b) Photos: you may choose one image in which to recognise a QR code. This uses the photo picker provided by the system; the Application cannot access your photo library and can read only the single image you choose, which is discarded once it has been read on your device.</p>
+<p>(c) A subscription or server recognised from a QR code is added only after you confirm it on a confirmation screen. Scanning never starts a connection.</p>
+<p>2.5 Records and Displays on Your Device</p>
+<p>To provide the features concerned, the Application keeps or displays the following on your device. None of it is transmitted to the Developer:</p>
+<p>(a) Traffic records: the tunnel process adds up, per day, the number of bytes that passed through the Application (split into direct and through servers) and keeps up to 90 days. The records contain no domains, addresses, or server names. You can use &quot;Clear History&quot; on the &quot;Traffic History&quot; screen of the Activity tab.</p>
+<p>(b) Server lists: recently used and favourite servers, and the fastest servers from your speed tests (used to order the &quot;Auto&quot; server). Only server names and their order are kept, without times or latencies; they are kept per subscription, identified by a digest of the subscription URL rather than the URL itself, and are deleted when that subscription is removed.</p>
+<p>(c) Live Activity (off by default): when turned on, the time the connection was established, the time it was last confirmed to be up, and the server name (which you can choose to hide) appear on the Lock Screen and in the Dynamic Island, and may therefore also appear on an Apple Watch, Mac, or vehicle paired with this device, without unlocking. The Application cannot learn of connection changes while it is in the background, so the display states only when it last confirmed the connection; if you disconnect from the Lock Screen, Control Center, a widget, or Shortcuts, it changes to disconnected.</p>
+<p>(d) Notifications: the Application sends only local notifications on your device: subscription expiry reminders and, if you turn on &quot;Disconnect alerts&quot; (off by default), alerts sent by the tunnel process when the connection drops unexpectedly or automatic reconnection is paused. Notifications contain no server names, server addresses, or subscription URLs; an expiry reminder shows only the expiry date.</p>
+<p>(e) Widgets and Control Center: Home Screen and Lock Screen widgets and the Control Center control, if you add them, show the connection state and the server name (some widgets also show connection time and traffic). Lock Screen widgets and Control Center can be seen without unlocking.</p>
 <h2>3. Use of Information</h2>
-<p>3.1 The information described in Section 2.2 is used solely to establish and maintain network connections locally on your device, to parse and update the subscriptions you configure, and to display server and account information in the interface.</p>
+<p>3.1 The information described in Section 2.2 is used solely to establish and maintain network connections locally on your device, to parse and update the subscriptions you configure, to choose servers according to your settings, and to display server and account information in the interface. The information described in Section 2.4 is used solely to recognise the QR codes you scan; that described in Section 2.5 is used solely to show you the corresponding content.</p>
 <p>3.2 The information described in Section 2.3 is used solely for your own diagnosis of connection failures.</p>
 <p>3.3 None of the above is used for automated decision-making, advertising, or cross-application tracking, or for any purpose beyond those stated in this Policy.</p>
 <h2>4. Sharing, Transfer, and Disclosure</h2>
 <p>4.1 Third-Party SDKs</p>
 <p>The Application integrates no third-party analytics, advertising, or crash-reporting SDK and therefore shares no information with any third party for those purposes.</p>
 <p>4.2 Third-Party Providers</p>
-<p>(a) Subscription updates. Where you import a subscription or request a subscription update, the Application issues a request to the relevant Third-Party Provider using the subscription URL you configured. That URL commonly embeds your access credentials, and the provider is accordingly able to observe your IP address, the time of the request, and the client type. This flow is inherent in how subscriptions operate.</p>
+<p>(a) Subscription updates. Where you import a subscription or request a subscription update, the Application issues a request to the relevant Third-Party Provider using the subscription URL you configured. When &quot;Auto-update subscription&quot; is on, each time the Application returns to the foreground it requests each subscription URL in turn according to that subscription&#x27;s own update interval, including subscriptions not currently in use. That URL commonly embeds your access credentials, and the provider is accordingly able to observe your IP address, the time of the request, and the client type. This flow is inherent in how subscriptions operate.</p>
 <p>(b) Traffic. Once a connection is established, your traffic passes through the servers of the Third-Party Provider you configured. It does not pass through any server controlled by the Developer.</p>
 <p>(c) Allocation of responsibility. A Third-Party Provider&#x27;s handling of the information it receives is governed by that provider&#x27;s own privacy policy, lies outside the Developer&#x27;s control, and is not the subject of any representation or warranty by the Developer. Configure only services you trust.</p>
 <p>(d) Launch connectivity check. On first launch, the Application issues a single HEAD request to Apple&#x27;s connectivity-check endpoint (captive.apple.com). The request carries no device identifier, account information, or configuration content. Its sole purpose is to have the operating system present its wireless-data authorization prompt (on device models that have one) at that moment, rather than mid-way through your first subscription import or connection, where it would cause that operation to fail. It runs once per installation; its result is neither recorded nor reported and does not affect the Application&#x27;s behaviour.</p>
-<p>(e) Device clock correction. Some line protocols require the client and server clocks to agree to within tens of seconds; a device whose clock is wrong cannot connect to any of those lines. The Application therefore queries external time sources in the following three situations, solely to compute the offset between this device&#x27;s clock and standard time: (i) before a pre-connection speed test and before starting a connection, it queries a public NTP service once (time.apple.com by default); (ii) if that query fails, it issues HEAD requests to cloudflare.com, apple.com, and microsoft.com and takes the agreed standard time from their response headers; (iii) once a connection is established, the tunnel process queries the same NTP service again at a fixed interval (30 minutes by default) and when the device wakes or the network changes. None of these requests carries a device identifier, account information, or configuration content; the services concerned can observe your IP address and the time of the request. The results are used only on the device to correct the clock offset and are not reported.</p>
+<p>(e) Device clock correction. Some line protocols require the client and server clocks to agree to within tens of seconds; a device whose clock is wrong cannot connect to any of those lines. The Application therefore queries external time sources in the following three situations, solely to compute the offset between this device&#x27;s clock and standard time: (i) before a pre-connection speed test and before starting a connection (and, if the feature in item (g) is on, at each cold launch), it queries a public NTP service once (time.apple.com by default); (ii) if that query fails, it issues HEAD requests to cloudflare.com, apple.com, and microsoft.com and takes the agreed standard time from their response headers; (iii) once a connection is established, the tunnel process queries the same NTP service again at a fixed interval (30 minutes by default) and when the device wakes, the network changes, or the system time changes. None of these requests carries a device identifier, account information, or configuration content; the services concerned can observe your IP address and the time of the request. The results are used only on the device to correct the clock offset and are not reported.</p>
+<p>(f) Speed tests and health checks. When you run a speed test, the Application reaches a test target through each server (the core&#x27;s built-in check address, or the addresses you entered under Settings → Speed Test Settings) to measure latency. When you choose the &quot;Auto&quot; server or turn on a backup subscription, the tunnel process performs health checks by reaching http://www.gstatic.com/generate_204 through servers: with &quot;Auto&quot;, about every 10 minutes while there is traffic, checking up to 25 servers of the current subscription. When you turn on &quot;Use when the main subscription fails&quot; for a subscription, the tunnel process checks about every 2 minutes while there is traffic and, if the current server is unavailable, forwards your traffic through that backup subscription&#x27;s servers; your traffic may therefore pass through the servers of a different Third-Party Provider. These health checks also run once each time a connection starts or the configuration is reloaded.</p>
+<p>(g) &quot;Pick Server at Launch&quot; (off by default). When turned on, at each cold launch while not connected the Application performs the clock correction described in item (e) once and runs one speed test of the current subscription&#x27;s servers in order to select a server. It does not start a connection.</p>
+<p>(h) Network check. Only when you tap &quot;Run Check&quot;, the Application issues one HEAD request to Apple&#x27;s connectivity-check endpoint (captive.apple.com) and runs one speed test of the currently selected server. The result is kept in memory only; it is not written to storage and not reported.</p>
+<p>(i) Rule sets. Only when you add or update a rule set, the Application requests the rule-set address you entered in order to download the rule list; whoever operates that address can observe your IP address and the time of the request. The downloaded content is converted and kept only on your device.</p>
+<p>(j) Name resolution. The DNS servers used by the Application (Cloudflare and AliDNS by default, changeable under Settings → DNS) can observe the domain names queried and the IP address from which each query is sent.</p>
+<p>(k) Apple push check. When &quot;Include Apple push&quot; is on (the default), after a connection is set up the tunnel process sends small HTTP requests to Apple&#x27;s connectivity-check endpoint (http://captive.apple.com/hotspot-detect.html), both through your server and directly, to decide whether Apple push traffic uses the server or a direct connection. This happens once when connecting or when the configuration is reloaded, and after that only while push connections are being made. The requests carry no device identifier, account information, or configuration content; Apple can observe the IP address each request comes from and its time.</p>
 <p>4.3 Disclosure Required by Law</p>
 <p>Except where required by mandatory provisions of law or by a competent authority acting through lawful process, the Developer transfers and discloses no information to any third party. As the Developer does not hold the information described in Sections 2.2 and 2.3, it is in any event not in a position to produce it.</p>
 <h2>5. Storage, Retention, and Security</h2>
 <p>5.1 Where Information Is Stored</p>
-<p>(a) Subscription URLs, server configuration data, the traffic and expiry information returned by your third-party provider, core runtime configuration, and the diagnostic log are stored within the Application&#x27;s sandbox directory and App Group shared container on your device.</p>
-<p>(b) None of this information is stored on any server controlled by the Developer or by any third party.</p>
+<p>(a) Subscription URLs, server configuration data, and the access credentials they embed (including servers you added manually) are stored in a single file in the Application Support directory of the Application&#x27;s sandbox. That file is excluded from iCloud and computer backups and remains encrypted until the device is first unlocked after a restart. The server configuration and credentials used for the current or most recent connection are also kept in the system VPN configuration; see (c).</p>
+<p>(b) Subscription names, the traffic and expiry information returned by your third-party provider, the diagnostic log, and the other information described in Sections 2.2 and 2.5 are stored within the Application&#x27;s sandbox directory and App Group shared container on your device. The names of trusted Wi-Fi networks are also written into the on-demand rules of the system VPN configuration (see Section 6.3).</p>
+<p>(c) The core configuration used for the current or most recent connection, including the access credentials of its servers (and of any backup subscription&#x27;s servers), is stored in the VPN configuration in system settings, so that the system can start the connection itself (for example through Auto Connect, or when you turn on the VPN in system settings). It is replaced the next time you connect or the configuration is updated while connected, and is deleted when you use &quot;Remove Subscription&quot; on the subscription in use.</p>
+<p>(d) None of this information is stored on any server controlled by the Developer or by any third party.</p>
 <p>5.2 Retention</p>
-<p>The information described in Section 5.1(a) is deleted when the Application is uninstalled; the diagnostic log is additionally subject to the deletion behavior described in Section 2.3(c).</p>
+<p>The information described in Section 5.1(a) to (c) is deleted when the Application is uninstalled; the diagnostic log is additionally subject to the deletion behavior described in Section 2.3(c), and traffic records to that described in Section 2.5(a).</p>
 <p>5.3 Security</p>
 <p>The Application relies on the application sandbox and Data Protection mechanisms provided by iOS to protect the local storage described above. You are encouraged to set a device passcode and to avoid using the Application on a jailbroken device.</p>
 <p>5.4 iCloud Backup</p>
-<p>If you enable iCloud Backup or create an encrypted local backup, the local data described above may be included in that backup. Backup is provided and controlled by Apple and is governed by Apple&#x27;s privacy policy; it does not constitute a transmission from the Application to the Developer.</p>
+<p>If you enable iCloud Backup or create an encrypted local backup, the local data described above (other than the file containing access credentials described in Section 5.1(a)) may be included in that backup. Backup is provided and controlled by Apple and is governed by Apple&#x27;s privacy policy; it does not constitute a transmission from the Application to the Developer.</p>
 <h2>6. Use of the Network Extension Permission</h2>
 <p>6.1 The Application uses Apple&#x27;s NetworkExtension framework to install a VPN configuration under Settings — General — VPN &amp; Device Management. The purpose of that configuration is to hand the device&#x27;s network traffic to a tunnel process running on your own device, which forwards it according to the rules you configured. iOS displays the VPN indicator in the status bar as a consequence.</p>
 <p>6.2 The Developer does not use this permission to analyze traffic, to read, modify, or inject content, or to record access history. The tunnel process runs locally on your device and returns no data to the Developer.</p>
+<p>6.3 If you add trusted Wi-Fi networks or choose the network types for automatic connection under Settings → Auto Connect, the Application writes the corresponding on-demand rules into the system VPN configuration, and the system decides when to connect or disconnect based on network names and types. The Application does not read the name of the Wi-Fi network you are connected to. Any Wi-Fi network with the same name is treated as trusted.</p>
 <h2>7. Your Rights</h2>
 <p>7.1 Access. You may view the subscription URL, the server list, and the traffic and expiry information returned by your subscription within the Application&#x27;s interface.</p>
-<p>7.2 Clearing and replacement. The Settings → Subscription screen of the Application provides the following operations:</p>
-<p>(a) &quot;Remove subscription&quot;, which clears the subscription URL, the server list already obtained, and the traffic and expiry information returned by the subscription, disconnects the current session, and removes the VPN configuration the Application wrote to system settings;</p>
-<p>(b) &quot;Replace subscription URL&quot;, which substitutes a new subscription URL for the current configuration;</p>
-<p>(c) &quot;Update subscription&quot;, which retrieves the server list again using the current subscription URL.</p>
-<p>After performing the operation described in (a), the operating system will ask you to authorise a VPN configuration again the next time you start a connection.</p>
-<p>7.3 Deletion of everything. Uninstalling the Application deletes all data it holds in the device container, including subscription configuration and the diagnostic log. The Application provides no facility for deleting individual historical subscriptions or for clearing the diagnostic log manually.</p>
+<p>7.2 Clearing and replacement. The Application provides the following operations:</p>
+<p>(a) &quot;Remove Subscription&quot; on the Settings → Current subscription screen, or &quot;Remove&quot; in the menu of a subscription card on the Subscriptions tab, which clears that subscription&#x27;s URL, the server list already obtained, the traffic and expiry information returned by the subscription, and that subscription&#x27;s server lists (Section 2.5(b)). If the subscription removed is the one in use, the Application also disconnects the current session and removes the VPN configuration it wrote to system settings; if it is serving as a backup for the current connection, its servers are taken out of that connection;</p>
+<p>(b) &quot;Change subscription URL&quot;, which substitutes a new subscription URL for the current configuration;</p>
+<p>(c) &quot;Update subscription&quot;, which retrieves the server list again using the current subscription URL;</p>
+<p>(d) &quot;Remove&quot; for each server you added manually, under &quot;Manually Added Servers&quot; on the Subscriptions tab;</p>
+<p>(e) &quot;Clear History&quot; on the &quot;Traffic History&quot; screen of the Activity tab;</p>
+<p>(f) &quot;Delete&quot; for a rule set under Settings → Routing mode, &quot;Delete&quot; for a local domain mapping or &quot;Restore Default DNS&quot; under Settings → DNS, and &quot;Remove&quot; for a trusted Wi-Fi network under Settings → Auto Connect.</p>
+<p>If the operation described in (a) removed the VPN configuration, the operating system will ask you to authorise a VPN configuration again the next time you start a connection.</p>
+<p>7.3 Deletion of everything. Uninstalling the Application deletes all data it holds in the device container, including subscription configuration and the diagnostic log. The Application provides no facility for clearing the diagnostic log manually; it is cleared automatically as described in Section 2.3(c).</p>
 <p>7.4 Withdrawal of consent. You may withdraw your acceptance of this Policy by ceasing to use the Application and uninstalling it.</p>
 <p>7.5 Because the Developer stores none of your Personal Information, a request to the Developer for access, portability, rectification, or erasure has no subject matter to operate on; all such operations can be carried out by you on your own device.</p>
 <h2>8. Children</h2>
 <p>8.1 The Application is not directed to children under 13, and the Developer does not knowingly collect personal information from children. As the Application collects personal information from no user, no collection of children&#x27;s information arises.</p>
 <p>8.2 If you are a minor, please decide whether to use the Application under the guidance of your guardian. Guardians with questions may contact the Developer as provided in Section 10.</p>
 <h2>9. Changes to This Policy</h2>
-<p>9.1 Where this Policy changes, its version number is raised and the full text is presented to you again within the Application. Your renewed acceptance is required before you may continue to use it.</p>
+<p>9.1 When this Policy changes, its version number is raised. The current text is always available on the About page in the Application&#x27;s Settings. If you continue to use the Application after an update, you accept the changed Policy.</p>
 <p>9.2 The version number and date of last update appear in the version line at the end of this text.</p>
 <h2>10. Contact</h2>
 <p>Questions, comments, or complaints regarding this Policy may be directed to the Developer at: hachiminemo@gmail.com</p><footer>Zetta · BB LAND COMPANY LIMITED · <a href="mailto:hachiminemo@gmail.com">hachiminemo@gmail.com</a></footer></body></html>
